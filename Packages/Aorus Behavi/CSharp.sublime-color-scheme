@@ -1,0 +1,94 @@
+{
+	"name": "CSharp",
+	"author": "Aorus Behavi",
+	"variables":
+	{
+		"black" : "#1E1E1E",
+		"blue" : "#4A9CCF",
+		"blue2" : "#7FD5FE",
+		"cyan" : "#49C9A4",
+		"gold" : "#FFC868",
+		"gold2" : "#D8DC8C",
+		"gray" : "#9B9B9B",
+		"green" : "#519F3C",
+		"light" : "#ADD797",		
+		"orange" : "#D58D5C",
+		"pink" : "#CDA0DD",
+		"red" : "#DD3932",
+		"white" : "#DCDCDC",
+	},
+	"globals":
+	{
+		"foreground": "var(white)",
+        "background": "var(black)",
+        "caret": "var(white)",
+        "line_highlight": "color(var(gray) alpha(0.2))",
+        "selection": "color(var(gray) alpha(0.2))",
+        "highlight": "var(red)",
+        "find_highlight_foreground": "var(red)",
+        "find_highlight": "color(var(red) alpha(0.2))",
+        "brackets_options": "bold",
+        "brackets_foreground": "var(red)",
+        "bracket_contents_options": "bold",
+        "bracket_contents_foreground": "var(red)"
+	},
+	"rules":
+	[
+		{
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(light)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(gold)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word, source.ruby keyword.declaration",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Annotation Punctuation",
+            "scope": "punctuation.definition.annotation",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "var(blue)",
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter - (source.c | source.c++ | source.objc | source.objc++)",
+            "foreground": "var(blue)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Function call",
+            "scope": "variable.function, variable.annotation",
+            "foreground": "var(gold2)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(cyan)",
+        },
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"name": "CSharp",
+	"author": "Aorus Behavi",
+	"variables":
+	{
+		"black": "#2B2B2B",
+        "blue": "#6897BB",
+        "gold": "#FFB765",
+        "gray": "#7E7F7F",
+        "green": "#5F864C",       
+        "orange": "#CB6B2E",
+        "pink": "#666DA9",
+        "red": "#993C3A",
+        "white": "#A9B7C6",        
+	},
+	"globals":
+	{
+		"foreground": "var(white)",
+        "background": "var(black)",
+        "caret": "var(white)",
+        "line_highlight": "color(var(gray) alpha(0.2))",
+        "selection": "color(var(gray) alpha(0.2))",
+        "highlight": "var(red)",
+        "find_highlight_foreground": "var(red)",
+        "find_highlight": "color(var(red) alpha(0.2))",
+        "brackets_options": "bold",
+        "brackets_foreground": "var(red)",
+        "bracket_contents_options": "bold",
+        "bracket_contents_foreground": "var(red)"
+	},
+	"rules":
+	[
+		{
+            "name": "Comment",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(gray)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.definition - punctuation.definition.numeric.base",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(blue)",
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Member Variable",
+            "scope": "variable.member",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword - keyword.operator, keyword.operator.word",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.separator, punctuation.terminator",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.section",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Accessor",
+            "scope": "punctuation.accessor",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "var(orange)",
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Function call",
+            "scope": "variable.function, variable.annotation",
+            "foreground": "var(gold)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(pink)",
+        },
+	]
+}
